@@ -1,1 +1,1 @@
-# ASK-simple-bluetooth-java
+# ASK-simple-bluetooth-connection-java
