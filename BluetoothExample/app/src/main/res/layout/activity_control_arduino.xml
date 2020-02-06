@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ControlArduinoActivity">
+
+    <TextView
+        android:id="@+id/tvReceiveData"
+        android:layout_width="342dp"
+        android:layout_height="482dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="252dp"
+        android:layout_marginRight="252dp"
+        android:text="Receive"
+        app:layout_constraintEnd_toEndOf="@+id/tvSendData"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSendData"
+        app:layout_constraintTop_toBottomOf="@+id/tvSendData" />
+
+    <Button
+        android:id="@+id/btnSendData"
+        android:layout_width="91dp"
+        android:layout_height="42dp"
+        android:text="Send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvSendData"
+        app:layout_constraintTop_toTopOf="@+id/tvSendData" />
+
+    <EditText
+        android:id="@+id/tvSendData"
+        android:layout_width="283dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSendData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
